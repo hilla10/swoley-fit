@@ -97,7 +97,12 @@ const Generator = ({
           <p className='capitalize'>
             {muscles.length === 0 ? 'Select muscles groups' : muscles.join(' ')}
           </p>
-          <i className='fa-solid fa-caret-down absolute right-3'></i>
+          <i
+            className={
+              showModal
+                ? 'fa-solid fa-caret-up  absolute right-3'
+                : 'fa-solid fa-caret-down absolute right-3'
+            }></i>
         </button>
         {showModal && (
           <div className='flex flex-col px-3 by-3'>
